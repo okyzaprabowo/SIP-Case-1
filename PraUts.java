@@ -4,7 +4,11 @@ import java.util.Calendar;
 
 class PraUts{
 
-    public static void main(String args[]){  
+    public static void main(String args[]){ 
+        /*
+        [1] https://github.com/okyzaprabowo/SIP-Case-1/blob/master/PraUts.java
+        [2] Okyza
+        */
         System.out.println("---------------------------------------------");
         System.out.println("1. Input Sejumlah Uang");
         System.out.println("---------------------------------------------");
@@ -60,6 +64,10 @@ class PraUts{
 
         }
         System.out.println();
+        /*
+        [1] https://www3.ntu.edu.sg/home/ehchua/programming/java/DateTimeCalendar.html
+        [2] Tim: Okyza, Alif, Fiola, Lavita, Taufiq, Yuke
+        */
         System.out.println("---------------------------------------------");
         System.out.println("No. 4 Simpan Uang di Brankas");
         System.out.println("---------------------------------------------");
