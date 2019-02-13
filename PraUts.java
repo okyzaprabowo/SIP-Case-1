@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+import java.util.Calendar;
 
 class PraUts{
 
@@ -62,6 +63,7 @@ class PraUts{
         System.out.println("---------------------------------------------");
         System.out.println("No. 4 Simpan Uang di Brankas");
         System.out.println("---------------------------------------------");
+        Calendar cal = Calendar.getInstance();
         int[][] arr2d = new int[32][13];
         // terjadinya baris
         for (int a = 1; a < 32; a++)
@@ -70,8 +72,8 @@ class PraUts{
             for (int b = 1; b <= 12; b++)
             {
                 arr2d[a][b] = a + b;
-                if(a == 13){
-                    if(b == 2)
+                if(a == cal.get(Calendar.DAY_OF_MONTH)){
+                    if(b == cal.get(Calendar.MONTH)+1)
                     {
                         System.out.print("Lemari Nomor (" + a + "," + b + ") = " + uang[uang.length - 1] + "\t");
                     }
