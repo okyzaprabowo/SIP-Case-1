@@ -11,7 +11,7 @@ class Pertemuan8{
         int uang=0;
         
         Scanner s = new Scanner (System.in);
-        for(int a=0; a<7; a++){
+        for(int a=0; a<3; a++){
         System.out.print("Masukan Jumlah Uang: ");
      
             uang = s.nextInt();
@@ -35,16 +35,39 @@ class Pertemuan8{
         Refensi https://github.com/okyzaprabowo/SIP-Case-1/blob/master/PraUts.java
         Team Fiola, Syahrin dan Devira
         */
-        //  System.out.println("---------------------------");
-        //  System.out.println("No. 3. Penjumlahan");
-        //  System.out.println("---------------------------");
+        System.out.println("---------------------------");
+        System.out.println("No. 3. Penjumlahan");
+        System.out.println("---------------------------");
          
-        //  for(int a = 0; a < uang.length; a++){
-        //     System.out.print(uang[a] + " ");
-        //     sum = uang[a] + sum;
+        // for(int a = 0; a < list.size(); a++){
+        //     System.out.print(list.get(a) + " ");
+        //     sum = list.get(a) + sum;
         // }
-        // System.out.println("Jumlah Simpanan Anda "+sum);
-        // System.out.println("");
+
+        for(int number : list)
+            sum += number;
+
+
+        System.out.println("Jumlah Simpanan Anda "+sum);
+        System.out.println("");
+
+
+        Collections.sort(list);
+        System.out.println(list);
+
+        Collections.reverse(list);
+        System.out.println(list);
+
+        System.out.println("Nomor 4");
+        System.out.println(list.get(1));
+
+        System.out.println("Nomor 5");
+        list.remove(list.size()-1);
+        System.out.println(list);
+
+        System.out.println("Nomor 6");
+        list.clear();
+        System.out.println(list);
         
     }
 }
